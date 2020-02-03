@@ -1,4 +1,4 @@
-function ()
+(function ()
 {
 	var d, e, f, g, h, i, j, k, l, m, n;
 	var o = document['getElementById']('supp-legends-5864');
@@ -109,4 +109,4 @@ function ()
 		}
 	};
 	colorize(p);
-}();
+})();
