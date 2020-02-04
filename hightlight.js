@@ -44,18 +44,14 @@ try {
         if (m)
         {
             if (j) f['style']['backgroundColor'] = p['nofollow'];
-            else %20
-            if (k) f['style']['backgroundColor'] = p['ugc'];
-            else %20
-            if (l) f['style']['backgroundColor'] = p['sponsored'];
-            else %20 f['style']['backgroundColor'] = p['link'];
+            else if (k) f['style']['backgroundColor'] = p['ugc'];
+            else if (l) f['style']['backgroundColor'] = p['sponsored'];
+            else  f['style']['backgroundColor'] = p['link'];
             f['style']['border'] = '2px solid ' + (j ? q['nofollow'] : q['link']);
             if (j) f['style']['borderColor'] = q['nofollow'];
-            else %20
-            if (k) f['style']['borderColor'] = q['ugc'];
-            else %20
-            if (l) f['style']['borderColor'] = q['sponsored'];
-            else %20 f['style']['borderColor'] = q['link'];
+            else if (k) f['style']['borderColor'] = q['ugc'];
+            else if (l) f['style']['borderColor'] = q['sponsored'];
+            else  f['style']['borderColor'] = q['link'];
             f['style']['color'] = 'black';
             f['style']['padding'] = '3px';
         }
