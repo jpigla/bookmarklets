@@ -6,7 +6,7 @@ try {
     p['nofollow'] = '#FDBD76';
     p['ugc'] = '#FAEBA6';
     p['sponsored'] = '#EB949D';
-    var % 20 q = {};
+    var q = {};
     q['link'] = '#86AF68';
     q['nofollow'] = '#DB913F';
     q['ugc'] = '#FCDCA9';
@@ -62,7 +62,7 @@ try {
     }
     if (!o)
     {
-        var % 20 r = document['createElement']('div');
+        var r = document['createElement']('div');
         o = document['createElement']('fieldset');
         o['style']['border'] = '1px solid grey';
         r['setAttribute']('id', 'supp-legends-5864');
@@ -73,8 +73,8 @@ try {
         r['style']['bottom'] = '5px';
         r['style']['zIndex'] = 0x3e7;
         r['appendChild'](o);
-        var % 20 t = document['createElement']('span');
-        var % 20 u = document['createTextNode']('X');
+        var t = document['createElement']('span');
+        var u = document['createTextNode']('X');
         t['appendChild'](u);
         t['style']['position'] = 'absolute';
         t['style']['right'] = '5px';
@@ -91,14 +91,14 @@ try {
     }
     colorize = function (v)
     {
-        var % 20 w = document['createElement']('legend');
+        var w = document['createElement']('legend');
         w['style']['marginLeft'] = '5px';
-        var % 20 x = document['createTextNode']('Legends: ');
+        var x = document['createTextNode']('Legends: ');
         w['appendChild'](x);
         o['appendChild'](w);
-        for (var % 20 y % 20 in % 20 v)
+        for (var y in v)
         {
-            var % 20 z = document['createElement']('DIV');
+            var z = document['createElement']('DIV');
             z['innerHTML'] = y;
             z['style']['border'] = '2px solid ' + q[y];
             z['style']['padding'] = '3px';
